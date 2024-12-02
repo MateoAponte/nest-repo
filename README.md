@@ -29,7 +29,9 @@
 ## Project setup
 
 ```bash
-$ npm install
+$ 1. npm install
+
+$ 2. npx prisma generate
 ```
 
 ## Compile and run the project
@@ -45,17 +47,20 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Run tests
+## How to interact
 
 ```bash
-# unit tests
-$ npm run test
+  // localhost:3000/
+  $ Permite obtener todos los Pokemones
 
-# e2e tests
-$ npm run test:e2e
+  // localhost:3000/:id
+  $ Permite obtener un pokemon por Id
 
-# test coverage
-$ npm run test:cov
+  // localhost:3000/get-movements/:id
+  $ Permite obtener los movimientos del pokemon por su Id
+
+  // localhost:3000/get-movements/:name
+  $ Permite obtener los movimientos del pokemon por su Nombre
 ```
 
 ## Resources
